@@ -1,0 +1,47 @@
+object FMyFormulaTester: TFMyFormulaTester
+  Left = 333
+  Height = 336
+  Top = 134
+  Width = 574
+  Caption = 'My Formula Tester'
+  ClientHeight = 336
+  ClientWidth = 574
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.1'
+  object Edit1: TEdit
+    Left = 16
+    Height = 23
+    Top = 304
+    Width = 542
+    Anchors = [akLeft, akRight, akBottom]
+    OnChange = Edit1Change
+    TabOrder = 0
+    Text = 'if(equal(Азбука,Азбука2),Книга,Арбуз)'
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 288
+    Top = 8
+    Width = 542
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Lines.Strings = (
+      '    ======Стандартные формулы======'
+      ''
+      '    Sum(X1,X2,X3,...,Xn)'
+      '    Difference(X1,X2,X3,...,Xn)'
+      '    Product(X1,X2,X3,...,Xn)'
+      '    Quotient(X1,X2,X3,...,Xn)'
+      ''
+      '    ReplaceEqual(Text,OldText1,NewText1,OldText2,NewText2,...,,OldTextN,NewTextN)'
+      '    ReplaceAll(Text,OldText,NewText)'
+      '    Replace(Text,OldText,NewText)'
+      '    Concat(N1,N2,N3,...,Nn)'
+      ''
+      '    If(Check,TrueResult,FalseResult)'
+      '    Equal(N1,N2,N3,...,Nn)  '
+    )
+    ScrollBars = ssBoth
+    TabOrder = 1
+  end
+end
